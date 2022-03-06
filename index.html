@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PRO-GRAM</title>
+</head>
+<style>
+    body {
+        background-image: url("./assets/logo/bg.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <div class="logo">
+                <a href="#home"> <img src="./assets/logo/logo.png" /></a>
+            </div>
+            <div class="heading">
+                <h2>PRO_GRAM</h2>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="dropdown">
+                <button onclick="myFunction('myDropdown1')" class="dropbtn">
+                    ADD
+                </button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="post.html">New Post</a>
+                    
+                    <a href="#scores">Scoreboards</a>
+                </div>
+            </div>
+            <div class="dropdown1">
+                <button onclick="myFunction('myDropdown2')" class="dropbtn">
+                    Account
+                </button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="register.html">LOGIN</a>
+                    <a href="signIn.html">SIGNUP</a>
+                </div>
+            </div>
+            <div class="dropdown1">
+                <button onclick="myFunction('myDropdown3')" class="dropbtn">
+                    MORE
+                </button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#scores">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <section class="main">
+        <div class="main-left">
+            <h2>The Social-media platform</h2>
+            <h3>For programmers</h3>
+            <h4>To exhibit projects</h4>
+
+            <a href="explore.html"><button onclick="get_to">EXPLORE</button></a>
+
+
+        </div>
+    </section>
+    <script>
+        function myFunction(id) {
+            document.getElementById(id).classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches(".dropbtn")) {
+                var dropdowns =
+                    document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                        openDropdown.classList.remove("show");
+                    }
+                }
+            }
+        };
+    </script>
+</body>
+
+</html>

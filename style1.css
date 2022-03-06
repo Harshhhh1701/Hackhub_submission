@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Righteous';
+}
+.container{
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+.subcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+    
+}
+.image_right{
+    display: block;
+}
+
+.username a{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
